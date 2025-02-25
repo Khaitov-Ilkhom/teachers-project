@@ -27,5 +27,3 @@ export const uploadTeacherFace = async (teacherId: number, file: File) => {
 };
 
 export const getTeacherImageIdListApi = (id: number | null) => axiosInstance.get(`/v1/teacher/face/list/${id}`);
-
-// export const getTeacherImagesApi = (id: number | null) => axiosInstance.get(`/v1/file/view/${id}`);

@@ -26,7 +26,7 @@ const CameraModal: React.FC = () => {
   const uploadImage = useMutation({
     mutationFn: async ({teacherId, file}: UploadImageParams) => {
       const formData = new FormData();
-      formData.append("file", file, file.name); // Binary fayl qo'shish
+      formData.append("file", file, file.name);
       return axiosInstance.post(
           `/v1/teacher/face/recognize/by/id?teacherId=${teacherId}`,
           formData,
